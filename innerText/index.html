@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Text</title>
+</head>
+<body>
+    <h1>Inner Text property</h1>
+    
+    <label name="form">Enter Password
+        <input type="password" name="upass" id="pass" onkeyup="show()">
+        <span id="myloc" ></span>
+    </label>
+
+
+    <script type="text/javascript">
+        function show()
+        {
+           var msg;
+
+            if(document.getElementById("pass").value.length>8)
+            {
+                msg = "Good Password";
+            }
+            
+            else
+            {
+               msg ="Poor Password";
+            }
+
+            document.getElementById("myloc").innerText= msg;
+        }
+
+
+    </script>
+
+</body>
+</html>
