@@ -9,5 +9,6 @@ var user ={
 
 console.log(user.firstName);
 console.log(user.loggedInCount);
+console.log(user.role);
 console.log(user["facebookLoggedIn"]);
 console.table(user);
