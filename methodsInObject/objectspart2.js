@@ -16,6 +16,5 @@ var user ={
 
 user.buyCourse("NODE JS");
 user.buyCourse("REact JS");
-user.buyCourse("Typescript");
 user.buyCourse("Angular course");
 console.log(user.getCourseCount());
