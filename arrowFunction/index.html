@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Hello</h1>
+    </div>
+
+
+    <script>
+        // function greet() {
+            // console.log('This is arrow funciton');
+            // }
+            // greet();
+
+        
+        // greet = (a,b)=>a+b;
+
+        let book={
+                name:["Jagmeet","Rohit","Poonam","Ritik","Brijlal"],
+                greet:"Good morning ",
+
+                speak()
+                {
+                    console.log(this.greet+this.name[1])
+
+                    // this.name.forEach((elements)=>{
+                    //     console.log(this.greet+" "+elements);
+                    // });
+                }
+        }
+        book.speak();
+
+
+    </script>
+    
+</body>
+</html>

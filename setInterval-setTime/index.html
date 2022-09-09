@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>setInteval</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1 id="header" class="header">Javascript</h1>
+        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, eaque. Placeat culpa optio iste velit quisquam officia qui quas veritatis eius obcaecati, quidem doloremque tenetur voluptates a dignissimos ea maxime Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet eius libero ipsa ab porro ut asperiores! Commodi tenetur quaerat dolorem at eveniet veritatis. Illum officiis laudantium nisi iure rem? Explicabo voluptates, sit, laboriosam porro exercitationem perferendis doloremque quod, similique facilis officiis ut. Amet aut dolores at illo vero sapiente esse, quas iste reprehenderit tempora perspiciatis laborum! Dolores est necessitatibus officiis eum vitae praesentium exercitationem omnis, iure illum quos beatae fugit, modi id facilis enim quod quam in tempore rerum similique? Facere impedit ipsum esse, odit dolores optio. Unde distinctio aliquid suscipit perferendis totam minima, rerum fuga quidem, maxime ullam laboriosam!</p>
+        <button class="btn"><a href="#">View</a></button>
+
+
+        
+                <div>Time is <span id="time" ></span></div>        
+    </div>
+
+    <script>
+        // let jag = document.getElementsByClassName('header');
+        // console.log(jag);
+        
+        // let sel = document.querySelector('.container');
+        // console.log(sel);
+
+         function greet(name,msg)
+        {
+            console.log("Hello good morning "+name+" "+msg);
+        }
+
+        // setTimeout((name,msg)=>{
+        // {
+        //     console.log("Hello good morning "+name+" "+msg);
+        // }
+        // },5000,"Mohit","How are you ?")
+        
+
+        // timeOut = setTimeout(greet,3000,"Mohit","How Are you?")
+        //     console.log(timeOut);
+        // timeOut = setTimeout(greet,3000,"Rohit","How Are you?")
+        //     console.log(timeOut);
+        // timeOut = setTimeout(greet,3000,"Sabana","How Are you?")
+        //     console.log(timeOut);
+        // timeOut = setTimeout(greet,3000,"Lucky","How Are you?")
+        //     console.log(timeOut);
+        // timeOut = setTimeout(greet,3000,"Mohit","How Are you?")
+        //     console.log(timeOut);
+        // clearTimeout(timeOut);
+
+        // setInterval(greet,1000,"raj","goodboy");
+        
+
+        function displayTime()
+        {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML =time;
+        }
+
+        // displayTime();
+        setInterval(displayTime,1000);
+
+
+        </script>
+
+
+    
+</body>
+</html>
