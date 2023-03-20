@@ -1,0 +1,27 @@
+// Truthy and Falsy
+// "", '',0,-0,NaN, False, null, undefined
+
+const bool1 = true;
+const bool2 = 2 > 1;
+
+if(bool1)
+{
+    console.log(`Hey it Works`);
+}
+
+if( bool2)
+{
+    console.log(`Hey it also Works`);
+}
+
+// const text = '';
+const text = 'jags';
+
+if(text)
+{
+    console.log(`hey the value truthy`);
+}
+
+else{
+    console.log(`hey the value falsy`);
+}
