@@ -1,0 +1,11 @@
+// template literals 
+// backticks characters `` - above tab(left from one)
+// interpolation ${} - insert expression(value)
+
+const name = 'jagmeet';
+const age = 25;
+const sentence = "Hey it's "+ name + 'and he is '+ age +' years old';
+
+const value = `\nHey it's ${name} and he is ${age} years old ;`
+
+console.log(value);
