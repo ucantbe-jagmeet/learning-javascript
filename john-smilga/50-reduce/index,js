@@ -1,0 +1,25 @@
+// reduce
+// iterates, callback function
+//  it reduces the value in the array to a single value - number, array, object
+// 1 parameter ('acc') -total of all calculations // accumulator
+// 2 parameter ('curr') - current iteration/ value
+
+const people = [
+  { name: "bob", age: 20, position: "developer", id: 1, salary: 200 },
+  { name: "peter", age: 22, position: "designer", id: 2, salary: 300 },
+  { name: "susy", age: 30, position: "the Boss", id: 3, salary: 500 },
+  { name: "anna", age: 35, position: "the Boss", id: 4, salary: 500 },
+];
+
+const total = people.reduce(function (acc, currItem) {
+  console.log(`total ${acc}`);
+  console.log(`current Item  ${currItem.salary}`);
+
+  acc += currItem.salary;
+
+  return acc;
+}, 0);
+
+console.log(total);
+
+// iske andar do parameters jayeinge ek toh acc hoga jisko accumulator kaheinge aur dusra parameter curr mtlb ki current hoga jo ki current item ke bare mei btayega jispe hum iterate kr rhe honge
